@@ -16,7 +16,7 @@ def toGray(mat):
 def asNumpyArray(mat):
     return np.array(mat,np.uint8)
 
-def invertImage(mat):
+def invertImageGrayColors(mat):
     newMat = []
     for linha in range(len(mat)):
         newMat.append([])

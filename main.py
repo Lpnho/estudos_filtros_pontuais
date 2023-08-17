@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from modules import asNumpyArray, invertImage, toGray
+from modules import asNumpyArray, invertImageGrayColors , toGray
 from matplotlib import pyplot
 path = "./assets/image.jpeg"
 # n_path = "./newimage.jpg"
@@ -10,7 +10,7 @@ image = cv2.imread(path)
 
 
 new_image = toGray(image)
-i_image = invertImage(new_image)
+i_image = invertImageGrayColors(new_image)
 # cv2.imwrite(n_imagem_name, asNumpyArray(new_image))
 
 # Mapeia para o mapa de cores que deve usar.
